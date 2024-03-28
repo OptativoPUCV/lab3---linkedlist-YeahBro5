@@ -67,7 +67,7 @@ void * lastList(List * list) {
   }
 
   list->current = list->tail;
-  return list->tail;
+  return list->tail->data;
 
 }
 
