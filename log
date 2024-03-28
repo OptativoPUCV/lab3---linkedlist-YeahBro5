@@ -53,3 +53,13 @@ Thu 28 Mar 2024 09:32:00 PM UTC:
  tests:  6|4
 total_score: 25/70
 cf5a288
+Thu 28 Mar 2024 09:42:16 PM UTC: 
+ list.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:76:68: error: lvalue required as left operand of assignment
+   76 |   if (list == NULL || list->current == NULL || list->current->prev = NULL)
+      |                                                                    ^
+Compilation failed
+555391a
