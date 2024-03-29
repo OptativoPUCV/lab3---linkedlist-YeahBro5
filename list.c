@@ -139,7 +139,8 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
+void * popCurrent(List * list) 
+{
 
   if (list == NULL || list->current == NULL)
   {
@@ -167,7 +168,7 @@ void * popCurrent(List * list) {
 
   free(list->current);
 
-  }
+}
 
 void cleanList(List * list) {
     while (list->head != NULL) {
