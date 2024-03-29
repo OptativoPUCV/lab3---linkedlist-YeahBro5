@@ -69,3 +69,17 @@ Thu 28 Mar 2024 09:42:29 PM UTC:
  tests:  9|3
 total_score: 35/70
 7e8b4b1
+Fri 29 Mar 2024 01:29:48 AM UTC: 
+ list.c | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:98:36: error: implicit declaration of function ‘size_of’ [-Werror=implicit-function-declaration]
+   98 |   Node* nuevoNodo = (Node *)malloc(size_of(Node));
+      |                                    ^~~~~~~
+list.c:98:44: error: expected expression before ‘Node’
+   98 |   Node* nuevoNodo = (Node *)malloc(size_of(Node));
+      |                                            ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bf0f510
