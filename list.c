@@ -165,8 +165,11 @@ void * popCurrent(List * list)
     
   }
 
-
+  void *data = list->current->data;
   free(list->current);
+
+  return data;
+  
 
 }
 
