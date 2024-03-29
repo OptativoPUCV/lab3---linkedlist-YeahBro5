@@ -202,3 +202,17 @@ list.c:171:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 474064c
+Fri 29 Mar 2024 04:01:27 AM UTC: 
+ list.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:147:5: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+  147 |     return;
+      |     ^~~~~~
+list.c:142:8: note: declared here
+  142 | void * popCurrent(List * list)
+      |        ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3916e08
