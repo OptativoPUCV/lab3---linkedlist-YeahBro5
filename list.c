@@ -141,10 +141,10 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
 
-  if (list == NULL || list->current == NULL)
-  {
-    return;
-  }
+  //if (list == NULL || list->current == NULL)
+  //{
+    //return;
+  //}
 
   if (list->current->prev == NULL)
   {

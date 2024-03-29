@@ -144,3 +144,14 @@ list.c:142:8: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 57c191e
+Fri 29 Mar 2024 03:52:58 AM UTC: 
+ list.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:166:1: error: control reaches end of non-void function [-Werror=return-type]
+  166 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+d62d3ce
