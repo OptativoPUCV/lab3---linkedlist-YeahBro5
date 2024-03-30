@@ -255,3 +255,13 @@ Sat 30 Mar 2024 04:01:02 PM UTC:
  tests:  12|0
 total_score: 70/70
 8419a5a
+Sat 30 Mar 2024 04:01:14 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:144:3: error: ‘else’ without a previous ‘if’
+  144 |   else if (list == NULL || list->current == NULL)
+      |   ^~~~
+Compilation failed
+6eace48
