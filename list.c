@@ -113,7 +113,7 @@ void pushCurrent(List * list, void * data) {
     return;
   }
   
-  Node* nuevoNodo = createNode(data);
+  Node* nuevoNodo = (Node *)malloc(sizeof(Node));
   nuevoNodo->data = data;
   nuevoNodo->next = list->current->next;
   nuevoNodo->prev = list->current;
